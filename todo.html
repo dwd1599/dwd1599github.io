@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: rgb(255, 243, 228);
+            }
+            .header {
+                position: relative;
+                text-align: center;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2.5rem;
+                margin: 0;
+                padding: 0 0 10px;
+                color: #172206;
+                vertical-align: middle;
+            }
+            i {
+                font-size: 40px;
+                padding-right: 15px;
+            }
+            .container {
+                /* display: flex;
+                justify-content: center;
+                align-content: center; */
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 50px;
+                margin: 0 200px;
+            }
+            .txt {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 50px;
+                margin: 0 200px;
+                text-align: center;
+                font-size: 28px;
+                font-weight: 700;
+                padding-bottom: 20px;
+                color: #2b3a12;
+                vertical-align: middle;
+            }
+            .fa-sharp {
+                font-size: 25px;
+                padding-right: 10px;
+            }
+            .box {
+                width: 100%;
+                height: 700px;
+                background-color: whitesmoke;
+                border: 5px solid #2c2c2c;
+                box-shadow: 3px 3px 5px rgb(134, 134, 134);
+                border-radius: 10px;
+                margin: 0 5px;
+                line-height: 50px;
+            }
+
+            p {
+                margin: 0;
+                padding: 0px 20px;
+                width: 100%;
+                min-height: 50px;
+                overflow-wrap: break-word;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+            button {
+                color: #556b2f;
+                display: inline-block;
+            }
+            .fa-paper-plane {
+                color: #556b2f;
+                font-size: 1rem;
+                text-align: center;
+                vertical-align: middle;
+                /* background-color: #556b2f; */
+
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .button {
+                /* border-radius: 10px; */
+                /* border: 3px solid #556b2f; */
+                padding: 10px 50px;
+                display: inline-block;
+            }
+            /* .delete {
+                background-image: url(./trash-solid.svg);
+                background-repeat: no-repeat;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <section class="header">
+            <h1><i class="fa-solid fa-list-ul"></i>TO DO LIST</h1>
+            <div class="button">
+                <input placeholder="Todo" />
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </section>
+        <section class="txt">
+            <div class="txt1"><i class="fa-sharp fa-solid fa-circle-check"></i>TO DO</div>
+            <div class="txt2"><i class="fa-sharp fa-solid fa-circle-check"></i>DOING</div>
+            <div class="txt3"><i class="fa-sharp fa-solid fa-circle-check"></i>DONE</div>
+        </section>
+        <section class="container">
+            <div class="box todo" category="todo"></div>
+            <div class="box doing" category="doing"></div>
+            <div class="box done" category="done"></div>
+        </section>
+
+        <script src="todo.js"></script>
+        <script src="https://kit.fontawesome.com/8fdd750570.js" crossorigin="anonymous"></script>
+    </body>
+</html>
