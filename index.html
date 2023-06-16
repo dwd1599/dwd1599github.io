@@ -1,298 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <style>
-      @font-face {
-        font-family: "GmarketSans";
-        font-weight: 300;
-        font-style: normal;
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot");
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2")
-            format("woff2"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff")
-            format("woff"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf")
-            format("truetype");
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "GmarketSans";
-        font-weight: 500;
-        font-style: normal;
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
-            format("woff2"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
-            format("woff"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
-            format("truetype");
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "GmarketSans";
-        font-weight: 700;
-        font-style: normal;
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
-        src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
-            format("woff2"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
-            format("woff"),
-          url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
-            format("truetype");
-        font-display: swap;
-      }
+        <style>
+            @font-face {
+                font-family: 'GmarketSans';
+                font-weight: 300;
+                font-style: normal;
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format('truetype');
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'GmarketSans';
+                font-weight: 500;
+                font-style: normal;
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format('truetype');
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'GmarketSans';
+                font-weight: 700;
+                font-style: normal;
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+                src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+                    url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format('truetype');
+                font-display: swap;
+            }
 
-      @font-face {
-        font-family: "KBO-Dia-Gothic_bold";
-        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff")
-          format("woff");
-        font-weight: 700;
-        font-style: normal;
-      }
-      * {
-        font-family: "GmarketSans";
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        background: linear-gradient(#667db6, #0082c8, #0082c8, #667db6);
-      }
-      .header {
-        position: relative;
-        text-align: center;
-        margin: 20px;
-      }
-      h1 {
-        font-family: "KBO-Dia-Gothic_bold";
-        font-size: 43px;
-        padding: 20px 0;
-        color: white;
-        vertical-align: middle;
-        text-shadow: 2px 2px 3px rgb(24, 24, 24);
-      }
-      i {
-        font-size: 35px;
-        /* padding: 0 15px; */
-      }
-      .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        margin: 0 100px;
-      }
-      .list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        margin: 0 100px;
-        text-align: center;
-        font-size: 28px;
-        font-weight: 700;
-        padding-bottom: 20px;
-        color: #fff;
-        vertical-align: middle;
-      }
-      .fa-sharp {
-        font-size: 25px;
-        padding-right: 10px;
-        color: #fff;
-      }
-      .box {
-        width: 100%;
-        min-height: 500px;
-        background-color: whitesmoke;
-        padding: 10px;
-        box-shadow: 3px 3px 5px rgb(56, 56, 56);
-        border-radius: 5px;
-        margin: 0 5px 100px;
-      }
-      p {
-        font-family: "UtoBalsamTint";
-        font-size: 1.3rem;
-        width: 100%;
-        overflow-wrap: break-word;
-        border-radius: 5px;
-        margin-bottom: 10px;
-      }
+            @font-face {
+                font-family: 'KBO-Dia-Gothic_bold';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff')
+                    format('woff');
+                font-weight: 700;
+                font-style: normal;
+            }
+            * {
+                font-family: 'GmarketSans';
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                background: linear-gradient(#5973b6, #0082c8, #3abaff);
+            }
+            .header {
+                position: relative;
+                text-align: center;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'KBO-Dia-Gothic_bold';
+                font-size: 43px;
+                padding: 20px 0;
+                color: white;
+                vertical-align: middle;
+                text-shadow: 2px 2px 3px rgb(24, 24, 24);
+            }
+            i {
+                font-size: 35px;
+                /* padding: 0 15px; */
+            }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 30px;
+                margin: 0 100px;
+            }
+            .list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 30px;
+                margin: 0 100px;
+                text-align: center;
+                font-size: 28px;
+                font-weight: 700;
+                padding-bottom: 20px;
+                color: #fff;
+                vertical-align: middle;
+            }
+            .fa-sharp {
+                font-size: 25px;
+                padding-right: 10px;
+                color: #fff;
+            }
+            .box {
+                width: 100%;
+                min-height: 500px;
+                background-color: whitesmoke;
+                padding: 10px;
+                box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                border-radius: 5px;
+                margin: 0 5px 100px;
+            }
+            p {
+                font-family: 'UtoBalsamTint';
+                font-size: 1.3rem;
+                width: 100%;
+                overflow-wrap: break-word;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
 
-      /* button 요소 */
-      button {
-        color: white;
-        font-size: 22px;
-        text-align: center;
-        margin-top: 10px;
-        padding: 20px 70px;
-        background: none;
-        border: 3px solid rgb(255, 93, 93);
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-      }
-      button::after,
-      button::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-100px, -50%);
-        width: 25px;
-        height: 25px;
-        background-color: rgb(255, 93, 93);
-        border-radius: 30%;
-        z-index: -1;
-        opacity: 0;
-        transition: opacity 0.3s ease, transform 0.3s ease, width 0.3s 0.5s ease,
-          height 0.3s 0.5s ease, border-radius 0.3s 0.5s ease;
-      }
-      button::after {
-        transform: translate(80px, -50%);
-      }
-      button:hover::after,
-      button:hover::before {
-        opacity: 1;
-        transform: translate(0%, -50%);
-        width: 55%;
-        height: 105%;
-        border-radius: 0;
-      }
-      button:hover::before {
-        transform: translate(-100%, -50%);
-      }
-      .fa-paper-plane {
-        color: white;
-        font-size: 22px;
-        /* text-align: center; */
-        vertical-align: middle;
-        padding-right: 10px;
-      }
-      .input {
-        padding: 10px 50px;
-        display: inline-block;
-        color: black;
-      }
-      input {
-        font-family: "GmarketSans";
-        font-weight: 500;
-        display: block;
-        border: 1px solid darkgray;
-        width: 800px;
-        padding: 20px;
-        margin: 10px;
-        font-size: 16px;
-        height: auto;
-      }
+            /* button 요소 */
+            button {
+                position: relative;
+                overflow: hidden;
+                transition: background 400ms;
+                color: #fff;
+                background-color: #ff4f4f;
+                padding: 20px 70px;
+                margin-top: 10px;
+                font-size: 22px;
+                text-align: center;
+                outline: 0;
+                border: 0;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            .ripple {
+                background-position: center;
+                transition: background 1s ease;
+            }
+            .ripple:hover {
+                background: #ff4f4f radial-gradient(circle, transparent 1%, #ff4f4f 1%) center/15000%;
+            }
+            .ripple:active {
+                background-color: rgb(255, 145, 145);
+                background-size: 100%;
+                transition: background 0s;
+            }
 
-      /* JS 추가 클래스 */
-      .delete {
-        float: right;
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
-        /* background-image: url(./delete-left-solid.svg);
+            .fa-paper-plane {
+                color: white;
+                font-size: 22px;
+                /* text-align: center; */
+                vertical-align: middle;
+                padding-right: 10px;
+            }
+            .input {
+                padding: 10px 50px;
+                display: inline-block;
+                color: black;
+            }
+            input {
+                font-family: 'GmarketSans';
+                font-weight: 500;
+                display: block;
+                border: 1px solid darkgray;
+                width: 800px;
+                padding: 20px;
+                margin: 10px;
+                font-size: 16px;
+                height: auto;
+            }
+            /* JS 추가 클래스 */
+            .delete {
+                float: right;
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                /* background-image: url(./delete-left-solid.svg);
                 background-size: cover;
                 background-repeat: no-repeat; */
-        width: 25px;
-        cursor: pointer;
-      }
-      .div {
-        padding: 25px 5px 0 15px;
-        margin-bottom: 10px;
-        position: relative;
-        overflow-wrap: break-word;
-      }
-      .link {
-        font-family: "GmarketSans";
-        font-size: 15px;
-        font-weight: 500;
-        text-decoration: none;
-        color: rgb(173, 0, 0);
-        overflow: hidden;
-        word-break: break-all;
-      }
-      .txt {
-        font-family: "GmarketSans";
-        font-size: 17px;
-        font-weight: 500;
-        overflow-wrap: break-word;
-        padding-top: 10px;
-      }
-      .time {
-        font-size: 15px;
-        font-weight: 500;
-        overflow-wrap: break-word;
-        padding: 5px 0 10px 0;
-      }
-      i {
-        text-transform: capitalize;
-      }
-    </style>
-  </head>
+                width: 25px;
+                cursor: pointer;
+            }
+            .div {
+                padding: 25px 5px 0 15px;
+                margin-bottom: 10px;
+                position: relative;
+                overflow-wrap: break-word;
+            }
+            .link {
+                font-family: 'GmarketSans';
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none;
+                color: rgb(173, 0, 0);
+                overflow: hidden;
+                word-break: break-all;
+            }
+            .txt {
+                font-family: 'GmarketSans';
+                font-size: 17px;
+                font-weight: 500;
+                overflow-wrap: break-word;
+                padding-top: 10px;
+            }
+            .time {
+                font-size: 15px;
+                font-weight: 500;
+                overflow-wrap: break-word;
+                padding: 5px 0 10px 0;
+            }
+        </style>
+    </head>
 
-  <body>
-    <section class="header">
-      <h1>
-        <i class="fa-solid fa-quote-left" style="padding: 15px"></i>TO-DO LIST<i
-          class="fa-solid fa-quote-right"
-          style="padding: 15px"
-        ></i>
-      </h1>
+    <body>
+        <section class="header">
+            <h1>
+                <i class="fa-solid fa-quote-left" style="padding: 15px"></i>TO-DO LIST<i
+                    class="fa-solid fa-quote-right"
+                    style="padding: 15px"
+                ></i>
+            </h1>
 
-      <div class="input">
-        <div>
-          <input
-            type="textarea"
-            class="title"
-            placeholder="🔎   제목"
-            maxlength="20"
-          />
-          <input
-            type="textarea"
-            class="text"
-            style="height: 80px"
-            placeholder="🔎   할일"
-            maxlength="200"
-          />
-          <input type="textarea" class="url" placeholder="🔎   URL" />
-        </div>
-        <div class="btn">
-          <button><i class="fa-solid fa-paper-plane"></i>Click</button>
-        </div>
-      </div>
-    </section>
-    <section class="list">
-      <div><i class="fa-sharp fa-solid fa-circle-check"></i>TO DO</div>
-      <div><i class="fa-sharp fa-solid fa-circle-check"></i>DOING</div>
-      <div><i class="fa-sharp fa-solid fa-circle-check"></i>DONE</div>
-    </section>
-    <section class="container">
-      <div class="box todo" category="todo"></div>
-      <div class="box doing" category="doing"></div>
-      <div class="box done" category="done"></div>
-    </section>
+            <div class="input">
+                <div>
+                    <input type="textarea" class="title" placeholder="🔎   제목" maxlength="20" />
+                    <input type="textarea" class="text" style="height: 80px" placeholder="🔎   할일" maxlength="200" />
+                    <input type="textarea" class="url" placeholder="🔎   URL" />
+                </div>
+                <button class="ripple"><i class="fa-solid fa-paper-plane"></i>Click</button>
+            </div>
+        </section>
+        <section class="list">
+            <div><i class="fa-sharp fa-solid fa-circle-check"></i>TO DO</div>
+            <div><i class="fa-sharp fa-solid fa-circle-check"></i>DOING</div>
+            <div><i class="fa-sharp fa-solid fa-circle-check"></i>DONE</div>
+        </section>
+        <section class="container">
+            <div class="box todo" category="todo"></div>
+            <div class="box doing" category="doing"></div>
+            <div class="box done" category="done"></div>
+        </section>
 
-    <script src="index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8fdd750570.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/8fdd750570.js" crossorigin="anonymous"></script>
+    </body>
 </html>

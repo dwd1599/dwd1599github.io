@@ -1,24 +1,25 @@
 const colors = [
     //18
-    '#C8707E',
-    '#E28FAD',
-    '#EF84C1',
-    '#E48E58',
-    '#EDAA7D',
-    '#F0C7AB',
-    '#5AA08D',
-    '#4C9211',
-    '#A8C879',
-    '#679FAE',
-    '#AC99C1',
-    '#96B1D0',
-    '#C08863',
-    '#ADA759',
-    '#C8C2BD',
-    '#65A8C4',
-    '#668D3C',
-    '#CAB0F1',
+    '#BAD7DF',
+    '#FFE2E2',
+    '#F6F6F6',
+    '#E1ECE9',
+    '#99DDCC',
+    '#CBEBCE',
+    '#CDF0EA',
+    '#BEAEE2',
+    '#EFE7D0',
+    '#EED7A1',
+    '#F2CEC2',
+    '#D7878A',
+    '#B6C4A0',
+    '#7A8D9C',
+    '#A9C7C5',
+    '#82A3AC',
+    '#FFB284',
+    '#FFC98B',
 ];
+
 let dragTarget = {};
 
 function 색추출기(colors) {
